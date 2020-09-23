@@ -13,12 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var logoView: UIView!
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?){
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-    }
-    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         //print("Edit button frame in init is: \(editButton.frame)")
@@ -29,10 +24,10 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         print("Edit button frame in viewDidLoad is: \(editButton.frame)")
-        }
+    }
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+        super.viewDidAppear(animated)
         print("Edit button frame in viewDidAppear is: \(editButton.frame)")
     }
     
