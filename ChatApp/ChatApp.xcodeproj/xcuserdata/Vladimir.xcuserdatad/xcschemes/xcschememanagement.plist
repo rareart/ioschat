@@ -4,20 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ChatApp with all logs.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>ChatApp with lifecycle logs.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
-		</dict>
-		<key>ChatApp with viewController logs.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>ChatApp.xcscheme_^#shared#^_</key>
 		<dict>

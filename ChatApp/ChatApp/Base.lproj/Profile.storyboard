@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bal-A6-HlE">
+                                <rect key="frame" x="67.5" y="45" width="240" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="bottomRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyb-r2-THe">
+                                        <rect key="frame" x="210" y="210" width="30" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Edit"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wyb-r2-THe" secondAttribute="bottom" id="2Ek-Kd-c7W"/>
+                                    <constraint firstAttribute="height" constant="240" id="7s0-DG-wRf"/>
+                                    <constraint firstItem="wyb-r2-THe" firstAttribute="top" secondItem="bal-A6-HlE" secondAttribute="top" constant="210" id="B6L-Tv-PB6"/>
+                                    <constraint firstAttribute="width" constant="240" id="DJj-ip-ddD"/>
+                                    <constraint firstAttribute="trailing" secondItem="wyb-r2-THe" secondAttribute="trailing" id="pr1-wu-cku"/>
+                                    <constraint firstItem="wyb-r2-THe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bal-A6-HlE" secondAttribute="leading" constant="210" id="wzU-kG-PO6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marina Dudarenko" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm4-is-AsN">
+                                <rect key="frame" x="67.5" y="317" width="240" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UX/UI designer, web-designer Moscow, Russia" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyv-ku-xqQ">
+                                <rect key="frame" x="77.5" y="378" width="240" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyH-7P-oA2">
+                                <rect key="frame" x="56" y="597" width="263" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mfu-xs-FtX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hyv-ku-xqQ" firstAttribute="leading" secondItem="bal-A6-HlE" secondAttribute="leading" constant="10" id="2ga-K5-4Oj"/>
+                            <constraint firstItem="Hyv-ku-xqQ" firstAttribute="top" secondItem="qm4-is-AsN" secondAttribute="bottom" constant="32" id="5MA-t2-mh5"/>
+                            <constraint firstItem="bal-A6-HlE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="5nZ-uS-eSK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GyH-7P-oA2" secondAttribute="bottom" constant="30" id="Csq-bl-hvB"/>
+                            <constraint firstItem="GyH-7P-oA2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UJj-Sq-R2k"/>
+                            <constraint firstItem="bal-A6-HlE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V8u-ru-QIn"/>
+                            <constraint firstItem="qm4-is-AsN" firstAttribute="trailing" secondItem="bal-A6-HlE" secondAttribute="trailing" id="Ypq-1X-kxf"/>
+                            <constraint firstItem="Hyv-ku-xqQ" firstAttribute="trailing" secondItem="bal-A6-HlE" secondAttribute="trailing" constant="10" id="bEn-jB-Pee"/>
+                            <constraint firstItem="qm4-is-AsN" firstAttribute="leading" secondItem="bal-A6-HlE" secondAttribute="leading" id="dqb-aj-Wky"/>
+                            <constraint firstItem="GyH-7P-oA2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="eMO-cc-0JS"/>
+                            <constraint firstItem="qm4-is-AsN" firstAttribute="top" secondItem="bal-A6-HlE" secondAttribute="bottom" constant="32" id="mpA-Vh-P1s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="editButton" destination="wyb-r2-THe" id="iEh-bK-0uv"/>
+                        <outlet property="logoView" destination="bal-A6-HlE" id="92V-eA-KaW"/>
+                        <outlet property="saveButton" destination="GyH-7P-oA2" id="i96-RJ-zJ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="74"/>
+        </scene>
+    </scenes>
+</document>
